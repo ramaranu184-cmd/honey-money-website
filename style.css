@@ -1,0 +1,681 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f5f5;
+    color:#333;
+}
+
+
+/* ================= HEADER ================= */
+
+header{
+    background:#0b5ed7;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.logo h2{
+    font-size:32px;
+}
+
+.logo p{
+    font-size:18px;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:8px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+nav a:hover{
+    color:#ffb300;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+    background:linear-gradient(135deg,#ffb300,#ff6f00);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+.hero p{
+    font-size:18px;
+    margin:20px auto;
+    line-height:1.6;
+    max-width:800px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.hero-btn a{
+    display:inline-block;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:30px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.call-btn{
+    background:#0066cc;
+}
+
+.wa-btn{
+    background:#25D366;
+}
+
+.hero-btn a:hover{
+    opacity:0.85;
+    transform:scale(1.03);
+}
+
+
+/* ================= SLIDER ================= */
+
+.slider{
+    text-align:center;
+    padding:40px 20px;
+    background:#fff;
+}
+
+.slider h2{
+    color:#0b5ed7;
+    margin-bottom:20px;
+}
+
+.slider img{
+    width:90%;
+    max-width:700px;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+/* ================= SERVICES ================= */
+
+.services{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.services h2{
+    color:#0b5ed7;
+    margin-bottom:25px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#ff6f00;
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.5;
+}
+
+
+/* ================= OFFER ================= */
+
+.offer{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.offer h2{
+    color:#ff6f00;
+    margin-bottom:20px;
+}
+
+.offer-card{
+    background:white;
+    max-width:500px;
+    margin:auto;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.offer-card h3{
+    color:#0b5ed7;
+}
+
+.offer-card p{
+    margin-top:15px;
+    line-height:1.6;
+}
+
+.offer-card a{
+    display:inline-block;
+    margin-top:20px;
+    background:#25D366;
+    color:white;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:white;
+    margin:20px;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    line-height:1.6;
+}
+
+.about h2{
+    color:#0b5ed7;
+    margin-bottom:15px;
+}
+
+
+/* ================= COUNTER ================= */
+
+.counter{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:30px;
+    flex-wrap:wrap;
+}
+
+.counter-box{
+    background:#0b5ed7;
+    color:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    width:200px;
+}
+
+.counter-box h2{
+    color:white;
+    font-size:35px;
+    margin-bottom:8px;
+}
+
+
+/* ================= GALLERY ================= */
+
+.gallery{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.gallery h2{
+    color:#0b5ed7;
+    margin-bottom:25px;
+}
+
+.gallery-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.gallery-box img{
+    width:250px;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.gallery-box img:hover{
+    transform:scale(1.03);
+}
+
+
+/* ================= NOTICE ================= */
+
+.notice{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.notice h2{
+    color:#0b5ed7;
+    margin-bottom:20px;
+}
+
+.notice-box{
+    background:white;
+    max-width:700px;
+    margin:auto;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.notice-box p{
+    font-size:18px;
+    margin:12px;
+    line-height:1.5;
+}
+
+
+/* ================= PAYMENT ================= */
+
+.payment{
+    padding:30px 20px;
+    text-align:center;
+}
+
+.payment h2{
+    color:#0b5ed7;
+    margin-bottom:20px;
+}
+
+.payment-box{
+    background:white;
+    max-width:500px;
+    margin:auto;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.payment-box img{
+    width:220px;
+    max-width:90%;
+    margin:20px;
+    border-radius:10px;
+}
+
+
+/* ================= DOCUMENT UPLOAD ================= */
+
+.upload{
+    padding:30px 20px;
+    text-align:center;
+}
+
+.upload h2{
+    color:#0b5ed7;
+    margin-bottom:20px;
+}
+
+.upload-box{
+    background:white;
+    max-width:500px;
+    margin:auto;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.upload-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact{
+    padding:30px 20px;
+    text-align:center;
+    background:white;
+    margin:20px;
+    border-radius:15px;
+}
+
+
+/* ================= FORM ================= */
+
+.form-section{
+    padding:30px 20px;
+    text-align:center;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea{
+    width:90%;
+    max-width:500px;
+    padding:12px;
+    margin:8px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.form-section button{
+    padding:12px 30px;
+    background:#0b5ed7;
+    color:white;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+
+/* ================= RATE LIST ================= */
+
+.rates{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.rates h2{
+    color:#0b5ed7;
+    margin-bottom:25px;
+}
+
+.rates table{
+    width:90%;
+    max-width:800px;
+    margin:auto;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.rates th{
+    background:#0b5ed7;
+    color:white;
+    padding:15px;
+    font-size:18px;
+}
+
+.rates td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    font-size:16px;
+}
+
+.rates tr:hover{
+    background:#f5f5f5;
+}
+
+
+/* ================= SOCIAL MEDIA ================= */
+
+.social{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.social h2{
+    color:#0b5ed7;
+    margin-bottom:20px;
+}
+
+.social a{
+    display:inline-block;
+    margin:8px;
+    padding:10px 18px;
+    background:#0b5ed7;
+    color:white;
+    text-decoration:none;
+    border-radius:25px;
+}
+
+
+/* ================= REVIEWS ================= */
+
+.reviews{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.reviews h2{
+    color:#0b5ed7;
+    margin-bottom:25px;
+}
+
+.review{
+    background:white;
+    max-width:400px;
+    margin:15px auto;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    font-size:18px;
+}
+
+.review p{
+    margin-top:10px;
+    line-height:1.5;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+}
+
+footer h3{
+    color:#ffb300;
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px;
+}
+
+
+/* ================= FLOATING WHATSAPP ================= */
+
+.floating-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    z-index:999;
+}
+
+
+/* ================= FLOATING CALL ================= */
+
+.floating-call{
+    position:fixed;
+    left:20px;
+    bottom:20px;
+    background:#0b5ed7;
+    color:white;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    z-index:999;
+}
+
+
+/* ================= HOVER ================= */
+
+button:hover,
+.hero-btn a:hover,
+.upload-btn:hover,
+.social a:hover,
+.offer-card a:hover{
+    opacity:0.85;
+}
+
+
+/* ================= PAGE ANIMATION ================= */
+
+body{
+    animation:pageLoad 0.6s ease;
+}
+
+@keyframes pageLoad{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    header{
+        padding:15px 10px;
+    }
+
+    .logo h2{
+        font-size:26px;
+    }
+
+    .logo p{
+        font-size:16px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px;
+    }
+
+    .hero{
+        padding:45px 15px;
+    }
+
+    .hero h1{
+        font-size:30px;
+    }
+
+    .hero h2{
+        font-size:22px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .counter{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .counter-box{
+        width:90%;
+    }
+
+    .gallery-box{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .gallery-box img{
+        width:90%;
+        height:auto;
+    }
+
+    .slider img{
+        width:95%;
+        height:220px;
+    }
+
+    .floating-whatsapp{
+        right:15px;
+        bottom:15px;
+    }
+
+    .floating-call{
+        left:15px;
+        bottom:15px;
+    }
+
+    .social a{
+        display:block;
+        max-width:250px;
+        margin:10px auto;
+    }
+
+}
